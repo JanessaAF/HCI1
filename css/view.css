@@ -1,0 +1,78 @@
+html, body {
+  height:100%
+}
+
+h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container-fluid{
+  height:calc(100% - 50px);
+  background-color: #0d0c0c
+}
+
+.row {
+  height:100%
+}
+
+.card{
+  margin-top: 20px;
+}
+
+#cart{
+  color:white;
+  font-style: oblique;
+}
+
+#termColumn{
+  background-color: DimGrey;
+  color:white;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#subjectColumn {
+  background-color: slateBlue;
+  display: none;
+  color: white;
+  overflow-y: auto;
+}
+
+#termColumn a, #subjectColumn a {
+  color:white;
+}
+
+#termColumn .nav-item .active, #subjectColumn .nav-item .active {
+  background-color: white;
+  color:  #0d0c0c;
+}
+
+#coursesColumn{
+  color:lightgrey;
+  overflow-y: auto;
+}
+
+#coursesColumn .card{
+  background-color: lavender;
+  color:  #0d0c0c;
+}
+
+.courseTime{
+  margin-left: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.courseDesc{
+  font-style: italic;
+}
+
+.courseProf, .courseCredits, .courseLocation{
+  text-align: right;
+}
+
+.btn-info{
+  float: right;
+}
