@@ -36,9 +36,21 @@ function showCourses(subject){
     course += '\<div class="col-sm-4"\> \<div class="courseProf"\> Instructor: '+ item.instructor +'\</div\>';
     course += '\<div class="courseLocation"\> Location: '+ item.location +'\</div\>';
     course += '\<div class="courseCredits"\> Credits: '+ item.credits +'CR \</div\>\</div\>\</div\>\</div\>'
-    course += '\<div class="card-footer"\>\<button type="button" class="btn btn-info" onclick=addToCart();\>\<i class="fa fa-cart-plus" aria-hidden="true"\>\</i\> Add to Cart\</button\>\</div\>\</div\>';
+    course += '\<div class="card-footer"\>\<button type="button" class="btn btn-info" onclick=addToCart("'+ item.code +'");\>\<i class="fa fa-cart-plus" aria-hidden="true"\>\</i\> Add to Cart\</button\>\</div\>\</div\>';
     coursesHtml += course;
   });
   $("#coursesColumn").html(coursesHtml);
   return coursesHtml;
+}
+
+
+function addToCart(course){
+  console.log(course);
+  popoverText = $("#cart").attr("data-content")
+  if( popoverText === "No classes in cart."){
+    $("#cart").attr("data-content", course + "<br>");
+  }else{
+    $("#cart").attr("data-content", popoverText + course + "<br>");
+  }
+  $("#cart").popover('show');
 }
