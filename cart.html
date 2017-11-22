@@ -10,16 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0afeed1056.js"></script>
-    <script src="js/view.js"></script>
     <script src="js/cart.js"></script>
-
+    <script src="js/view.js"></script>
     <script>
       jQuery(document).ready(function($){
         console.log('hitReady');
-        $('[data-toggle="popover"]').popover();
+        renderCheckout();
       });
     </script>
   </head>
@@ -32,45 +31,54 @@
             <a class="nav-link" href="#">Home</a>
           </li>
         </ul>
-        <ul class="nav navbar-nav ml-auto">
-          <li  class="nav-item">
-              <button id="cart" data-toggle="popover" container="body" data-html="true" data-placement="bottom"  popover-append-to-body="true" title="Cart   <button id='checkout' onclick='goToCart()' class='btn btn-sm btn-success'> Checkout </button>"
-                  data-content="No classes in cart." class="nav-link btn btn-secondary"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </button>
-          </li>
-        </ul>
       </nav>
     </div>
 
 
     <div class="container-fluid">
       <div class="row">
-        <!-- term select column -->
-        <div id ="termColumn" class="col-sm-2">
-          <h3>Select Term:</h3>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item"><a id="20181" class="nav-link active" href="#" onclick=showSubjects(this.id);>Winter 2018</a></li>
-            <li class="nav-item"><a id="20173" class="nav-link" href="#" onclick=showSubjects(this.id);>Fall 2017</a></li>
-            <li class="nav-item"><a  id="20172" class="nav-link" href="#" onclick=showSubjects(this.id);>Summer 2017</a></li>
-            <li class="nav-item"><a id="20171" class="nav-link" href="#" onclick=showSubjects(this.id);>Winter 2017</a></li>
-          </ul>
-        </div>
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <h2 class="display-4">Cart</h2>
+             <hr class="my-4">
 
-        <!-- subject select column -->
-        <div id="subjectColumn" class="col-sm-2">
-          <h3>Select Subject:</h3>
-          <ul id="subjects" class="nav nav-pills flex-column">
-            <!-- inserted into at load -->
-          </ul>
-        </div>
+             <div id="cartSpace">
+               <h6>No classes in cart.</h6>
+             </div>
 
-        <div id="coursesColumn" class="col-sm-8">
-            <!-- inserted into at load -->
+             <hr class="my-4">
+             <button class="btn btn-success" data-toggle="modal" data-target="#confirmed"> <i class="fa fa-check-circle" aria-hidden="true"></i> Confirm Classes</button>
+             <button id="empty" class="btn btn-danger" onclick="emptyCart()"> <i class="fa fa-window-close" aria-hidden="true"></i> Empty Cart</button>
+           </div>
+          </div>
+
+          <div class="col-md-6">
+            <div id="comparisonJumbotron" class="jumbotron">
+                <h2 class="display-4">If you take these courses...</h2>
+                <hr class="my-4">
+                <h4>Schedule</h4>
+                <hr class="my-3">
+                <h4>Map</h4>
+            </div>
         </div>
       </div>
     </div>
 
 
 
+    <div class="modal fade" id="confirmed">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3> Courses confirmed! </h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">See Schedule</button>
+            <button type="button" class="btn btn-secondary" onclick="home()">Return to Home Page</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

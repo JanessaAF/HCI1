@@ -1,0 +1,46 @@
+html, body {
+  height:100%
+}
+
+h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+i{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.container-fluid{
+  height:calc(100% - 50px);
+  background-color: #0d0c0c
+}
+
+.btn-info{
+  float: right;
+}
+
+.jumbotron{
+  position:relative;
+  top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn-success, #empty{
+  float: right;
+  margin-left: 15px;
+}
+
+h6{
+  text-align: center;
+}
+
+.modal-body{
+  margin-top: 10px;
+}
+
+.my-3{
+  width:80%
+}

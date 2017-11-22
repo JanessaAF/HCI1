@@ -3,6 +3,9 @@ var subjects = ["Agriculture", "Biology", "Computer Science", "English",
 
 var courses = {Agriculture: [{code:"AGRI1000", name: "Introduction to Agriculture", description: "An introduction to agriculture.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Dr. White", location:"EITC E2 105", credits:"3.00"}]}
 
+var codeSubjectMap = {AGRI:"Agriculture", BIOL:"Biology", COMP:"Computer Science", ENGL:"English", FILM: "Film Studies",
+MATH: "Mathematics", PHYS:"Physics", SOCI:"Sociology", WOMN:"Women's Studies"}
+
 //show subjects tab
 function showSubjects(term){
   var subjectsHtml = "";
@@ -43,14 +46,20 @@ function showCourses(subject){
   return coursesHtml;
 }
 
-
 function addToCart(course){
   console.log(course);
-  popoverText = $("#cart").attr("data-content")
+  popoverText = $("#cart").attr("data-content");
   if( popoverText === "No classes in cart."){
     $("#cart").attr("data-content", course + "<br>");
   }else{
     $("#cart").attr("data-content", popoverText + course + "<br>");
   }
+  cart.push(course);
   $("#cart").popover('show');
+}
+
+function goToCart(){
+  console.log(cart);
+  localStorage.setItem('cart', cart);
+  location.href = "cart.html";
 }
