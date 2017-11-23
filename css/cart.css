@@ -14,7 +14,7 @@ i{
 
 .container-fluid{
   height:calc(100% - 50px);
-  background-color: #0d0c0c
+  background-color: lightGrey;
 }
 
 .btn-info{

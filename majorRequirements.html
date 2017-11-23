@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Courses</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/majorRequirements.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/0afeed1056.js"></script>
+    <script src="js/nav.js"></script>
+  </head>
+
+  <body>
+    <div id="navbarWrapper">
+      <nav class="navbar navbar-toggleable-md navbar-expand-sm bg-inverse navbar-inverse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <button id="back" class="btn btn-sm btn-secondary" onclick="backToStudentInfo()"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Student Info</button>
+        <h2 class="display-4">Requirements for Computer Science - Major</h2>
+         <hr class="my-4">
+
+         <div id="body">
+
+           <h4>Credits needed for degree: <span>120</span></h4>
+           <h4>Credits left:  <span>30</span></h4>
+           <h4>Current GPA: <span>3.4</span> (Minimum: 2.0)</h4>
+
+
+           <h2>Course Checklist</h2>
+           <hr class="my-3">
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> W Credit</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Credits in Faculty of Arts</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 1010</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 1020 (Minimum: C+, Your Grade: A)</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i>C average for:
+             <ul>
+               <li>MATH 1300 (Your Grade: B)</li>
+               <li>MATH 1500 (Your Grade: C)</li>
+             </ul>
+           </h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 1000 (Minimum: C, Your Grade: C+)</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2080</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2130</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2140</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2150</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2160</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2280</h6>
+           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 3350</h6>
+           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 3370</h6>
+           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 3430</h6>
+           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 4620</h6>
+           <h2>Additional Requirements:</h2>
+           <hr class="my-3">
+           <h4>21 credits needed at 3000 level or higher</h4>
+           <h5>Remaining: <span>12</span></h5>
+           <h4>6 credits needed at 4000 level</h4>
+           <h5>Remaining: <span>6</span></h5>
+           <h4>Maximum 90 credits of COMP/MATH/STAT</h4>
+           <h5>Remaining: <span>24</span></h5>
+           <h4>6-36 credits outside of Science</h4>
+           <h5>Remaining: <span>24</span></h5>
+         </div>
+
+       </div>
+    </div>
+  </body>
+</html>

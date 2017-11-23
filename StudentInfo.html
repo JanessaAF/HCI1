@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Course Registration - Home</title>
+  <title>Course Registration - Student Info</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -89,7 +89,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="Home.html">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicons-exit"></span>Exit</a></li>
@@ -125,13 +125,14 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Student Information</a>
         </h4>
       </div>
-      <div id="collapse2" class="panel-collapse collapse">
+      <div id="collapse2" class="panel-collapse collapse in">
         <div class="panel-body">
 			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="StudentInfo.html">Student Info Main Page</a></li>
+				<li class="active"><a href="StudentInfo.html">Student Info Main Page</a></li>
 				<li><a href="#">Schedule</a></li>
 				<li><a href="#">Exams</a></li>
 				<li><a href="#">Grades</a></li>
+        <li><a href="#">Requirements</a></li>
 			</ul>
 		</div>
       </div>
@@ -187,58 +188,40 @@
   </div>
  </div>
 
-<div class="col-sm-10">
 	<div class="container">
     <div class="row">
-		<div class="col-sm-6">
-			<a href="Registration.html" class="tile blue" style="color:white">
-				<h1 class ="title">Registration</h1>
+		<div class="col-sm-10">
+			<a href="Schedule.html" class="tile blue" style="color:white">
+				<h1 class ="title">Schedule</h1>
 				<p>---------------------------</p>
-				<p>All Course Registration related functions.</p>
+				<p>Class schedule listing the date, time and location of every class you are enrolled in.</p>
 			</a>
 		</div>
-		<div class="col-sm-6">
-			<a href="StudentInfo.html" class="tile blue" style="color:white">
-				<h1 class ="title">Student Info</h1>
+		<div class="col-sm-10">
+			<a href="Exams.html" class="tile blue" style="color:white">
+				<h1 class ="title">Exams</h1>
 				<p>---------------------------</p>
-				<p>Students Exam info, Classes and Grades.</p>
+				<p>Students Exam info, list the time, date and location of any upcomming exams.</p>
 			</a>
 			</div>
-		<div class="col-sm-6">
-			<a href="Finances.html" class="tile blue" style="color:white">
-				<h1 class ="title">Finances</h1>
+		<div class="col-sm-10">
+			<a href="Grades.html" class="tile blue" style="color:white">
+				<h1 class ="title">Grades</h1>
 				<p>---------------------------</p>
-				<p>Financal Information, Financial Account Summary, Payment and Tax Info. </p>
+				<p>Student Grades, list all final grades you have recived in the past. </p>
 			</a>
 			</div>
-		<div class="col-sm-6">
-			<a href="Options.html" class="tile blue" style="color:white">
-				<h1 class ="title">Options</h1>
-				<p>---------------------------</p>
-				<p>Options for managing your Course Registration website Account.</p>
-			</a>
-			</div>
-			<div class="col-sm-3 " >
-			</div>
-		<div class="col-sm-6 center-block" >
-			<a href="Help.html" class="tile blue" style="color:white" >
-				<h1 class ="title">Help</h1>
-				<p>---------------------------</p>
-				<p>Helpful resources and information related to course registration and this website.</p>
-			</a>
-		</div>
-			<div class="col-sm-3 " >
-				</div>
+      <div class="col-sm-10">
+  			<a href="majorRequirements.html" class="tile blue" style="color:white">
+  				<h1 class ="title">Requirements</h1>
+  				<p>---------------------------</p>
+  				<p>Credits, courses and grade requirements for your degree. </p>
+  			</a>
+  			</div>
 		</div>
     </div>
 
-	<div class="container">
-	<!-- <div class="col-xs-12">
-				<iframe src="Quick Schedule.html" height="300" width="600"></iframe>
-	</div> -->
-	</div>
   </div>
-</div>
 </div>
 
 <footer class="container-fluid text-center">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Course Registration - Home</title>
+  <title>Course Registration - Help</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <style>
-    /* Remove navbar's default margin-bottom and rounded borders */
+    /* Remove navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 10px;
       border-radius: 0;
@@ -20,13 +20,13 @@
 	}
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-
+    
     /* Set sidenav 100% height */
     .sidenav {
 	  padding-left: 0px;
       height: 100%;
     }
-
+    
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -36,43 +36,43 @@
 	  width: 100%;
 	  position: fixed;
     }
-
+    
     /* accomodate for smaller screen with sidenav size */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;}
+      .row.content {height:auto;} 
     }
 	body {
 		background-color: lightgray;
 	}
-
+	
 	.title {
 		margin-top: 2px;
 		font-weight: 400
 	}
-
+	
 	.panel {
 	border-color: black;
 	border: 5px;
 	}
-
-	.tile {
+	
+	.tile {  
   width: 100%;
 	display: inline-block;
 	box-sizing: border-box;
-	background: #944dff;
+	background: #944dff;		
 	padding: 10px;
 	margin-bottom: 10px;
 	}
-
+	
 	.tile:hover{
 		background: #8000ff;
 		}
-
-
+	
+	
   </style>
 </head>
 <body>
@@ -83,13 +83,13 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">Course Registration</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="Home.html">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicons-exit"></span>Exit</a></li>
@@ -97,11 +97,11 @@
     </div>
   </div>
 </nav>
-
-<div class="container-fluid text-center">
+  
+<div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-
+	
 	<div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -114,7 +114,7 @@
 			<ul class="nav nav-pills nav-stacked" role="tablist">
 				<li><a href="Registration.html">Registration Main Page</a></li>
 				<li><a href="#">Course Lookup</a></li>
-				<li><a href="#">My Courses</a></li>
+				<li><a href="#">My Courses</a></li> 
 			</ul>
 		</div>
       </div>
@@ -175,70 +175,38 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Help</a>
         </h4>
       </div>
-      <div id="collapse5" class="panel-collapse collapse">
+      <div id="collapse5" class="panel-collapse collapse in">
         <div class="panel-body">
 			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="Help.html">Help Main Page</a></li>
+				<li class="active"><a href="Help.html">Help Main Page</a></li>
 				<li><a href="#">Contact Info</a></li>
 			</ul>
 		</div>
       </div>
     </div>
-  </div>
+  </div> 
  </div>
-
-<div class="col-sm-10">
+	
 	<div class="container">
     <div class="row">
-		<div class="col-sm-6">
-			<a href="Registration.html" class="tile blue" style="color:white">
-				<h1 class ="title">Registration</h1>
+		<div class="col-sm-10">     
+			<a href="registration.html" class="tile blue" style="color:white">
+				<h1 class ="title">Help Forums</h1>
 				<p>---------------------------</p>
-				<p>All Course Registration related functions.</p>
+				<p>Link to a forum related to course registration where you can see peoples previous questions as well as have your questions aswered.</p>
 			</a>
 		</div>
-		<div class="col-sm-6">
-			<a href="StudentInfo.html" class="tile blue" style="color:white">
-				<h1 class ="title">Student Info</h1>
+		<div class="col-sm-10">     
+			<a href="studentInfo.html" class="tile blue" style="color:white">
+				<h1 class ="title">Contact Info</h1>
 				<p>---------------------------</p>
-				<p>Students Exam info, Classes and Grades.</p>
+				<p>Contact information for helpful individuals who will be able to solve any issues you may face related to the course registration website.</p>
 			</a>
 			</div>
-		<div class="col-sm-6">
-			<a href="Finances.html" class="tile blue" style="color:white">
-				<h1 class ="title">Finances</h1>
-				<p>---------------------------</p>
-				<p>Financal Information, Financial Account Summary, Payment and Tax Info. </p>
-			</a>
-			</div>
-		<div class="col-sm-6">
-			<a href="Options.html" class="tile blue" style="color:white">
-				<h1 class ="title">Options</h1>
-				<p>---------------------------</p>
-				<p>Options for managing your Course Registration website Account.</p>
-			</a>
-			</div>
-			<div class="col-sm-3 " >
-			</div>
-		<div class="col-sm-6 center-block" >
-			<a href="Help.html" class="tile blue" style="color:white" >
-				<h1 class ="title">Help</h1>
-				<p>---------------------------</p>
-				<p>Helpful resources and information related to course registration and this website.</p>
-			</a>
-		</div>
-			<div class="col-sm-3 " >
-				</div>
-		</div>
+		</div>	
     </div>
-
-	<div class="container">
-	<!-- <div class="col-xs-12">
-				<iframe src="Quick Schedule.html" height="300" width="600"></iframe>
-	</div> -->
-	</div>
+	
   </div>
-</div>
 </div>
 
 <footer class="container-fluid text-center">
