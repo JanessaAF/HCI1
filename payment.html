@@ -25,13 +25,13 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link" href="studentInfo.html">Student Information</a>
+                <a class="nav-link" href="finances.html">Finances</a>
               </li>
               <li class="nav-item nav-link disabled">
                 >
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="majorRequirements.html">Requirements</a>
+                <a class="nav-link" href="payments.html">Payments</a>
               </li>
             </ul>
             <ul class="nav navbar-nav ml-auto">
@@ -74,7 +74,7 @@
             <li class="nav-item"><a class="nav-link" href="viewSched.html">Schedule</a></li>
             <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
             <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
-            <li class="nav-item"><a class="nav-link active" href="majorRequirements.html">Requirements</a></li>
+            <li class="nav-item"><a class="nav-link" href="majorRequirements.html">Requirements</a></li>
           </ul>
         </div>
           </div>
@@ -88,7 +88,7 @@
           <ul class="nav nav-pills flex-column" role="tablist">
             <li class="nav-item"><a class="nav-link" href="Finances.html">Finances Main Page</a></li>
             <li class="nav-item"><a class="nav-link" href="accountSummary.html">Account Summary</a></li>
-            <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+            <li class="nav-item"><a class="nav-link active" href="payment.html">Payment</a></li>
             <li class="nav-item"><a class="nav-link" href="taxInfo.html">Tax Info</a></li>
           </ul>
         </div>
@@ -126,49 +126,10 @@
 
         <div class ="col-md-10">
       <div class="jumbotron">
-        <h2 class="display-4">Requirements for Computer Science - Major</h2>
+        <h2 class="display-4">Payments</h2>
          <hr class="my-4">
-
-         <div id="body">
-
-           <h4>Credits needed for degree: <span>120</span></h4>
-           <h4>Credits left:  <span>30</span></h4>
-           <h4>Current GPA: <span>3.4</span> (Minimum: 2.0)</h4>
-
-           <h2>Course Checklist</h2>
-           <hr class="my-3">
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> W Credit</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Credits in Faculty of Arts</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 1010</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 1020 (Minimum: C+, Your Grade: A)</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i>C average for:
-             <ul>
-               <li>MATH 1300 (Your Grade: B)</li>
-               <li>MATH 1500 (Your Grade: C)</li>
-             </ul>
-           </h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> STAT 1000 (Minimum: C, Your Grade: C+)</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2080</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2130</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2140</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2150</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2160</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 2280</h6>
-           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 3350</h6>
-           <h6><i class="fa fa-check-square-o" aria-hidden="true"></i> COMP 3370</h6>
-           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 3430</h6>
-           <h6><i class="fa fa-square-o" aria-hidden="true"></i> COMP 4620</h6>
-           <h2>Additional Requirements:</h2>
-           <hr class="my-3">
-           <h4>21 credits needed at 3000 level or higher</h4>
-           <h5>Remaining: <span>12</span></h5>
-           <h4>6 credits needed at 4000 level</h4>
-           <h5>Remaining: <span>6</span></h5>
-           <h4>Maximum 90 credits of COMP/MATH/STAT</h4>
-           <h5>Remaining: <span>24</span></h5>
-           <h4>6-36 credits outside of Science</h4>
-           <h5>Remaining: <span>24</span></h5>
-         </div>
+         <h4>Total Owed: <span>$3100.00</span><span><h5><a href="accountSummary.html">View full account summary</a></h5></span></h4>
+         <button class="btn btn-success"  data-toggle="modal" data-target="#paid">Pay Now!</button>
 
        </div>
      </div>
@@ -176,5 +137,19 @@
     <footer class="text-center">
       <p>Course Registration Site, 2017.</p>
     </footer>
+
+
+    <div class="modal fade" id="paid">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3> Thank you for your payment! </h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

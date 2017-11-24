@@ -1,10 +1,10 @@
 .display-4{
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 html, body {
-  height:auto;
+  height:100%;
 }
 
 h3{
@@ -18,7 +18,7 @@ i{
 }
 
 .container-fluid{
-  height:auto;
+  height:190%;
   overflow: hidden;
   background-color: lightgrey;
 }
@@ -78,4 +78,20 @@ footer {
 bottom: 0;
 width: 100%;
 position: fixed;
+}
+
+.btn-danger{
+  float: right;
+}
+
+h4{
+  margin-bottom: 20px;
+}
+
+footer p{
+  margin-top: 0px;
+}
+
+p{
+  margin-top: -15px;
 }
