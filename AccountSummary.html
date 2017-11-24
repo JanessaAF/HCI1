@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Course Registration - Student Info</title>
+  <title>Course Registration - Account Summary</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -10,10 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <style>
-  html, body, div.container-fluid{
-    height:100%;
-  }
-    /* Remove navbar's default margin-bottom and rounded borders */
+
     .navbar {
       margin-bottom: 10px;
       border-radius: 0;
@@ -21,26 +18,21 @@
 	img {
 		margin: 11px
 	}
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
 
-    /* Set sidenav 100% height */
     .sidenav {
 	  padding-left: 0px;
       height: 100%;
     }
 
-    /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 5px;
-	  bottom: 0;
-	  width: 100%;
-	  position: fixed;
+	    bottom:  -3%;
+	      width: 100%;
     }
 
-    /* accomodate for smaller screen with sidenav size */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
@@ -48,13 +40,19 @@
       }
       .row.content {height:auto;}
     }
-	body {
+
+    html, body, div.container-fluid{
+      height:100%;
+    }
+
+	html, body {
+    height: 100%;
 		background-color: lightgray;
 	}
 
 	.title {
 		margin-top: 2px;
-		font-weight: 400;
+		font-weight: 400
 	}
 
 	.panel {
@@ -63,7 +61,7 @@
 	}
 
 	.tile {
-  width: 85%;
+  width: 100%;
 	display: inline-block;
 	box-sizing: border-box;
 	background: #944dff;
@@ -75,10 +73,20 @@
 		background: #8000ff;
 		}
 
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		background-color: white;
+	}
 
-    .card {
-      margin-top: 5px;
-      color:  #0d0c0c;
+	td, th {
+		border: 2px solid;
+		text-align: left;
+		padding: 10px;
+	}
+
+    h2{
+      text-align: left;
     }
 
     .card a{
@@ -100,7 +108,7 @@
       </div>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="studentInfo.html">Student Info</a>
+          <a class="nav-link" href="accountSummary.html">Account Summary</a>
         </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
@@ -112,7 +120,7 @@
   </div>
 
 <div class="container-fluid text-center">
-  <div class="row content">
+    <div class="row">
         <div class="col-md-2 sidenav">
           <!-- sidenav -->
 
@@ -138,7 +146,7 @@
           <div id="collapse2" class="card-collapse collapse">
             <div class="card-body bg-light text-dark">
           <ul class="nav nav-pills flex-column" role="tablist">
-            <li class="nav-item"><a class="nav-link active" href="StudentInfo.html">Student Info Main Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="StudentInfo.html">Student Info Main Page</a></li>
             <li class="nav-item"><a class="nav-link" href="viewSched.html">Schedule</a></li>
             <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
             <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
@@ -155,7 +163,7 @@
             <div class="card-body bg-light text-dark">
           <ul class="nav nav-pills flex-column" role="tablist">
             <li class="nav-item"><a class="nav-link" href="Finances.html">Finances Main Page</a></li>
-            <li class="nav-item"><a class="nav-link" href="accountSummary.html">Account Summary</a></li>
+            <li class="nav-item"><a class="nav-link active" href="accountSummary.html">Account Summary</a></li>
             <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
             <li class="nav-item"><a class="nav-link" href="taxInfo.html">Tax Info</a></li>
           </ul>
@@ -190,45 +198,70 @@
           </div>
         </div>
       </div>
+
+<!-- sidenav -->
+
       </div>
 
-  <!-- sidenav -->
+ <div class="col-sm-10">
+<div class="jumbotron">
 
-
-
-		<div class="col-sm-10">
-      <div>
-			<a href="Schedule.html" class="tile blue" style="color:white">
-				<h1 class ="title">Schedule</h1>
-				<p>---------------------------</p>
-				<p>Class schedule listing the date, time and location of every class you are enrolled in.</p>
-			</a>
-      </div>
-		<div>
-			<a href="Exams.html" class="tile blue" style="color:white">
-				<h1 class ="title">Exams</h1>
-				<p>---------------------------</p>
-				<p>Students Exam info, list the time, date and location of any upcomming exams.</p>
-			</a>
-			</div>
-		<div>
-			<a href="Grades.html" class="tile blue" style="color:white">
-				<h1 class ="title">Grades</h1>
-				<p>---------------------------</p>
-				<p>Student Grades, list all final grades you have recived in the past. </p>
-			</a>
-			</div>
-      <div>
-  			<a href="majorRequirements.html" class="tile blue" style="color:white">
-  				<h1 class ="title">Requirements</h1>
-  				<p>---------------------------</p>
-  				<p>Credits, courses and grade requirements for your degree. </p>
-  			</a>
-  			</div>
-    </div>
-
-  </div>
+  <h2 class="my-4">Account Summary</h2>
+  <hr>
+ <table>
+  <tr>
+    <th>Expense (Full Year)</th>
+    <th>Cost</th>
+    <th>Sub-total</th>
+	<th>Total</th>
+  </tr>
+  <tr>
+    <td>Science Tuition</td>
+    <td>$2200.00</td>
+    <td>$2200.00</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Arts Tuition</td>
+    <td>$350.00</td>
+    <td>$1550.00</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Student Organization Dues</td>
+    <td>$120.00</td>
+    <td>$1670.00</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Library Fee</td>
+    <td>$50.00</td>
+    <td>$1720.00</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Recreation Fee</td>
+    <td>$80.00</td>
+    <td>1800.00</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Student Bus Pass</td>
+    <td>$300.00</td>
+    <td>$2100.00</td>
+	<td></td>
+  </tr>
+    <tr>
+    <td>Total Cost (Year)</td>
+    <td>----------</td>
+	<td>----------</td>
+    <td>$3100.00</td>
+  </tr>
+</table>
 </div>
+
+ </div>
+
 </div>
 </div>
 

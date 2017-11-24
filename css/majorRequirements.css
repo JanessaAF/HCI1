@@ -29,7 +29,7 @@ i{
 
 .jumbotron{
   position:relative;
-  top: 50px;
+  top: 30px;
   margin-bottom: 100px;
   margin-left: 15px;
   margin-right: 15px;
@@ -54,4 +54,28 @@ h2{
 
 #body{
   margin-left: 8%;
+}
+
+.card {
+  margin-top: 5px;
+  color:  #0d0c0c;
+}
+
+.card a{
+  color: #0d0c0c;
+  font-size: 11pt;
+}
+
+#accordion .card{
+  text-align: center;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 5px;
+  left:0;
+bottom: 0;
+width: 100%;
+position: fixed;
 }

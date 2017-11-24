@@ -15,6 +15,8 @@
     <script src="https://use.fontawesome.com/0afeed1056.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/view.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/nav.js"></script>
     <script>
       jQuery(document).ready(function($){
         console.log('hitReady');
@@ -38,15 +40,16 @@
             </ul>
             <ul class="nav navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Exit</a>
+                <a class="nav-link" href="login.html">Exit</a>
               </li>
             </ul>
           </div>
       </nav>
     </div>
 
-
     <div class="container-fluid">
+      <br>
+      <button class=" btn btn-secondary" onClick="backToCourses()"> Back to Courses</button>
       <div class="row">
         <div class="col-md-6">
           <div class="jumbotron">
@@ -65,14 +68,26 @@
 
           <div class="col-md-6">
             <div id="comparisonJumbotron" class="jumbotron">
-                <h2 class="display-4">If you take these courses...</h2>
+                <h2 class="display-5">If you take these courses...</h2>
                 <hr class="my-4">
                 <h4>Schedule</h4>
+                <div id="scheduleDiv">
+
+                </div>
                 <hr class="my-3">
                 <h4>Map</h4>
+                <div id="mapDiv">
+
+                </div>
+                <div id="mapLegendDiv">
+
+                </div>
             </div>
         </div>
       </div>
+      <footer class="text-center">
+        <p>Course Registration Site, 2017.</p>
+      </footer>
     </div>
 
 

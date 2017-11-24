@@ -13,7 +13,8 @@ i{
 }
 
 .container-fluid{
-  height:calc(100% - 50px);
+  height:100%;
+  overflow: hidden;
   background-color: lightGrey;
 }
 
@@ -21,7 +22,7 @@ i{
   height:100%
 }
 
-.card{
+.card-added{
   margin-top: 20px;
   color:  #0d0c0c;
 }
@@ -81,4 +82,48 @@ i{
 
 .btn-info{
   float: right;
+}
+
+/* Set sidenav 100% height */
+.sidenav {
+  padding-left: 0px;
+  height: 100%;
+}
+
+/* accomodate for smaller screen with sidenav size */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+.title {
+  margin-top: 2px;
+  font-weight: 400
+}
+
+.card {
+  margin-top: 5px;
+  color:  #0d0c0c;
+}
+
+.card a{
+  color: #0d0c0c;
+  font-size: 11pt;
+}
+
+#accordion .card{
+  text-align: center;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 5px;
+  left:0;
+bottom: 0;
+width: 100%;
+position: fixed;
 }

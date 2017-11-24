@@ -4,12 +4,15 @@
   <title>Course Registration - Finances</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="js/home.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <style>
+  html, body, div.container-fluid{
+    height:100%;
+  }
     /* Remove navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 10px;
@@ -59,164 +62,166 @@
 	border: 5px;
 	}
 
-	.tile {
-  width: 100%;
-	display: inline-block;
-	box-sizing: border-box;
-	background: #944dff;
-	padding: 10px;
-	margin-bottom: 10px;
-	}
+  .tile {
+  width: 85%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #944dff;
+  padding: 10px;
+  margin-bottom: 10px;
+  }
 
-	.tile:hover{
-		background: #8000ff;
-		}
+  .tile:hover{
+    background: #8000ff;
+    }
 
+
+    .card {
+      margin-top: 5px;
+      color:  #0d0c0c;
+    }
+
+    .card a{
+      color: #0d0c0c;
+      font-size: 11pt;
+    }
+
+    #accordion .card{
+      text-align: center;
+    }
 
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="Home.html">Course Registration</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="Finances.html">Finances</a></li>
+  <div id="navbarWrapper">
+    <nav class="navbar navbar-toggleable-md navbar-expand-sm bg-inverse navbar-inverse">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="Home.html">Course Registration</a>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="finances.html">Finances</a>
+        </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicons-exit"></span>Exit</a></li>
+      <ul class="nav navbar-nav ml-auto">
+        <li  class="nav-item">
+          <a class="nav-link" href="login.html">Exit</a>
+        </li>
       </ul>
-    </div>
+    </nav>
   </div>
-</nav>
 
 <div class="container-fluid text-center">
   <div class="row content">
-    <div class="col-sm-2 sidenav">
+    <div class="col-md-2 sidenav">
+      <!-- sidenav -->
 
-	<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Registration</a>
-        </h4>
+  <div id="accordion">
+    <div class="card text-dark bg-light border border-dark">
+      <div class="card-header">
+          <a class="card-title card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Registration</a>
       </div>
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="Registration.html">Registration Main Page</a></li>
-				<li><a href="#">Course Lookup</a></li>
-				<li><a href="#">My Courses</a></li>
-			</ul>
-		</div>
+      <div id="collapse1" class="card-collapse collapse">
+        <div class="card-body bg-light text-dark">
+          <ul class="nav nav-pills flex-column"  role="tablist">
+            <li class="nav-item"><a class="nav-link" href="Registration.html">Registration Main Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="view.html">Course Lookup</a></li>
+            <li class="nav-item"><a class="nav-link" href="myCourses.html">My Courses</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Student Information</a>
-        </h4>
+    <div class="card text-dark bg-light">
+      <div class="card-header">
+          <a class="card-link card-title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Student Information</a>
       </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="StudentInfo.html">Student Info Main Page</a></li>
-				<li><a href="#">Schedule</a></li>
-				<li><a href="#">Exams</a></li>
-				<li><a href="#">Grades</a></li>
-        <li><a href="#">Requirements</a></li>
-			</ul>
-		</div>
+      <div id="collapse2" class="card-collapse collapse">
+        <div class="card-body bg-light text-dark">
+      <ul class="nav nav-pills flex-column" role="tablist">
+        <li class="nav-item"><a class="nav-link" href="StudentInfo.html">Student Info Main Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="viewSched.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
+        <li class="nav-item"><a class="nav-link" href="majorRequirements.html">Requirements</a></li>
+      </ul>
+    </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Finances</a>
-        </h4>
+    <div class="card bg-light text-dark">
+      <div class="card-header">
+          <a class="card-link card-title" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Finances</a>
       </div>
-      <div id="collapse3" class="panel-collapse collapse in">
-        <div class="panel-body">
-			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li class="active"><a href="Finances.html">Finances Main Page</a></li>
-				<li><a href="#">Account Summary</a></li>
-				<li><a href="#">Payment</a></li>
-				<li><a href="#">Tax Info</a></li>
-			</ul>
-		</div>
+      <div id="collapse3" class="card-collapse collapse">
+        <div class="card-body bg-light text-dark">
+      <ul class="nav nav-pills flex-column" role="tablist">
+        <li class="nav-item"><a class="nav-link active" href="Finances.html">Finances Main Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="accountSummary.html">Account Summary</a></li>
+        <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+        <li class="nav-item"><a class="nav-link" href="taxInfo.html">Tax Info</a></li>
+      </ul>
+    </div>
       </div>
     </div>
-	    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Options</a>
-        </h4>
+      <div class="card bg-light text-dark">
+      <div class="card-header">
+          <a class="card-link card-title" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Options</a>
       </div>
-      <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">
-			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="Options.html">Options Main Page</a></li>
-				<li><a href="#">Change Password</a></li>
-				<li><a href="#">Update Account Info</a></li>
-			</ul>
-		</div>
+      <div id="collapse4" class="card-collapse collapse">
+        <div class="card-body bg-light text-dark">
+      <ul class="nav nav-pills flex-column" role="tablist">
+        <li class="nav-item"><a class="nav-link" href="Options.html">Options Main Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="ChangePassword.html">Change Password</a></li>
+        <li class="nav-item"><a class="nav-link" href="updatePersonalInfo.html">Update Account Info</a></li>
+      </ul>
+    </div>
       </div>
     </div>
-	    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Help</a>
-        </h4>
+      <div class="card bg-light text-dark">
+      <div class="card-header">
+          <a class="card-link card-title" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Help</a>
       </div>
-      <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">
-			<ul class="nav nav-pills nav-stacked" role="tablist">
-				<li><a href="Help.html">Help Main Page</a></li>
-				<li><a href="#">Contact Info</a></li>
-			</ul>
-		</div>
+      <div id="collapse5" class="card-collapse collapse">
+        <div class="card-body  bg-light text-dark">
+      <ul class="nav nav-pills flex-column" role="tablist">
+          <li class="nav-item"><a class="nav-link" href="Help.html">Help Main Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactInfo.html">Contact Info</a></li>
+      </ul>
+    </div>
       </div>
     </div>
   </div>
- </div>
+  </div>
 
-	<div class="container">
-    <div class="row">
 		<div class="col-sm-10">
-			<a href="registration.html" class="tile blue" style="color:white">
-				<h1 class ="title">Registration</h1>
+      <div>
+			<a href="AccountSummary.html" class="tile blue" style="color:white">
+				<h1 class ="title">Account Summary</h1>
 				<p>---------------------------</p>
-				<p>All Course Registration related functions.</p>
+				<p>A summary of all expenses related to University Tuition and Fees.</p>
 			</a>
 		</div>
-		<div class="col-sm-10">
-			<a href="studentInfo.html" class="tile blue" style="color:white">
-				<h1 class ="title">Student Info</h1>
+		<div>
+			<a href="Payment.html" class="tile blue" style="color:white">
+				<h1 class ="title">Payment</h1>
 				<p>---------------------------</p>
-				<p>Students Exam info, Classes and Grades.</p>
+				<p>Different Options for payment of University Tuition and Fees.</p>
 			</a>
 			</div>
-		<div class="col-sm-10">
-			<a href="Finances.html" class="tile blue" style="color:white">
-				<h1 class ="title">Finances</h1>
+		<div>
+			<a href="TaxInfo.html" class="tile blue" style="color:white">
+				<h1 class ="title">Tax Info</h1>
 				<p>---------------------------</p>
-				<p>Financal Information, Account Summary, Payment and Tax Info. </p>
+				<p>Tax related information with emphesis on tax regulations and forms important for Students. </p>
 			</a>
 			</div>
+      	</div>
 		</div>
     </div>
   </div>
 </div>
 
-<footer class="container-fluid text-center">
+<footer class="text-center">
   <p>Course Registration Site, 2017.</p>
 </footer>
 

@@ -1,10 +1,16 @@
-var subjects = ["Agriculture", "Biology", "Computer Science", "English",
-"Film Studies", "Mathematics", "Physics", "Sociology", "Women's Studies"];
+var subjects = ["Agriculture", "Biology", "ComputerScience", "English",
+"Film", "Mathematics", "Sociology"];
 
-var courses = {Agriculture: [{code:"AGRI1000", name: "Introduction to Agriculture", description: "An introduction to agriculture.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Dr. White", location:"EITC E2 105", credits:"3.00"}]}
+var courses = {Agriculture: [{code:"AGRI1000", name: "Introduction to Agriculture", description: "An introduction to agriculture.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Dr. White", location:"EITC E2 165", credits:"3.00"}, {code:"AGRI2000", name: "Agriculture Part 2", description: "Agriculture cont'd.", hours:"11:30PM-12:30PM", days:"MWF", instructor:"Col. Mustard", location:"Armes 212", credits:"3.00"}, {code:"AGRI3000", name: "Farm Stuff", description: "An introduction to what you do on a farm.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Dr. McCree", location:"EITC E2 222", credits:"3.00"}],
+Biology:[{code:"BIOL1000", name: "Introduction to Biology", description: "An introduction to biology.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Dr. Who", location:"EITC E2 182", credits:"3.00"}],
+ComputerScience:[{code:"COMP1020", name: "Introduction to Comp Sci", description: "A second introduction to computer science.", hours:"11:30PM-1:00PM", days:"TR", instructor:"Dr. Phil", location:"Tier 101", credits:"3.00"}],
+English: [{code:"ENGL100", name: "Introduction to English", description: "An introduction to English.", hours:"11:30PM-12:30PM", days:"MWF", instructor:"Prof. Peacock", location:"Armes 134", credits:"3.00"}],
+Film:[{code:"FILM4000", name: "Film Finales", description: "A study of finales in film.", hours:"11:30PM-1:00PM", days:"TR", instructor:"Mr. Reyes", location:"Tier 121", credits:"3.00"}],
+Mathematics:[{code:"MATH1500", name: "Introduction to Failure", description: "Oops meant Calculus.", hours:"1:30PM-2:30PM", days:"MWF", instructor:"Ms. Oxton", location:"EITC E2 432", credits:"3.00"}],
+Sociology:[{code:"SOCI2000", name: "Education", description: "???", hours:"11:30PM-1:00PM", days:"TR", instructor:"Sir Winston", location:"Tier 420", credits:"3.00"}]};
 
-var codeSubjectMap = {AGRI:"Agriculture", BIOL:"Biology", COMP:"Computer Science", ENGL:"English", FILM: "Film Studies",
-MATH: "Mathematics", PHYS:"Physics", SOCI:"Sociology", WOMN:"Women's Studies"}
+var codeSubjectMap = {AGRI:"Agriculture", BIOL:"Biology", COMP:"ComputerScience", ENGL:"English", FILM: "Film",
+MATH: "Mathematics", SOCI:"Sociology"}
 
 //show subjects tab
 function showSubjects(term){
@@ -33,7 +39,7 @@ function showCourses(subject){
   $('#'+ subject).addClass("active")
   //build course list html
   courses[subject].forEach(function(item){
-    course = '\<div class="card"\>\<div class="card-header"\>\<h5\>'+ item.code + ' - ' + item.name +'\</h5\>\</div\>' //header
+    course = '\<div class="card card-added"\>\<div class="card-header"\>\<h5\>'+ item.code + ' - ' + item.name +'\</h5\>\</div\>' //header
     course += '\<div class="card-body"\> \<div class="row"\>\<div class="col-sm-8"\> \<div class="courseDesc"\>'+ item.description +'\</div\>';//body code
     course += '\<div class="courseTime"\> Time: '+ item.days + " " + item.hours +'\</div\>\</div\>';
     course += '\<div class="col-sm-4"\> \<div class="courseProf"\> Instructor: '+ item.instructor +'\</div\>';

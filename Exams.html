@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Course Registration - Help</title>
+  <title>Course Registration - Exams</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -13,7 +13,6 @@
   html, body, div.container-fluid{
     height:100%;
   }
-    /* Remove navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 10px;
       border-radius: 0;
@@ -21,7 +20,6 @@
 	img {
 		margin: 11px
 	}
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
 
     /* Set sidenav 100% height */
@@ -30,7 +28,6 @@
       height: 100%;
     }
 
-    /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
@@ -40,7 +37,6 @@
 	  position: fixed;
     }
 
-    /* accomodate for smaller screen with sidenav size */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
@@ -62,35 +58,47 @@
 	border: 5px;
 	}
 
-  .tile {
-  width: 85%;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #944dff;
-  padding: 10px;
-  margin-bottom: 10px;
+	.tile {
+  width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	background: #944dff;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+
+	.tile:hover{
+		background: #8000ff;
+		}
+		table {
+		border-collapse: collapse;
+		width: 100%;
+		background-color: white;
+	}
+
+	td, th {
+		border: 2px solid;
+		text-align: left;
+		padding: 10px;
+	}
+
+  .card {
+    margin-top: 5px;
+    color:  #0d0c0c;
   }
 
-  .tile:hover{
-    background: #8000ff;
-    }
+  .card a{
+    color: #0d0c0c;
+    font-size: 11pt;
+  }
 
+  #accordion .card{
+    text-align: center;
+  }
 
-    .card {
-      margin-top: 5px;
-      color:  #0d0c0c;
-    }
-
-    .card a{
-      color: #0d0c0c;
-      font-size: 11pt;
-    }
-
-    #accordion .card{
-      text-align: center;
-    }
-
-
+  h2{
+    text-align: left;
+  }
   </style>
 </head>
 <body>
@@ -102,7 +110,7 @@
       </div>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="help.html">Help</a>
+          <a class="nav-link" href="exams.html">Exams</a>
         </li>
       </ul>
       <ul class="nav navbar-nav ml-auto">
@@ -142,7 +150,7 @@
       <ul class="nav nav-pills flex-column" role="tablist">
         <li class="nav-item"><a class="nav-link" href="StudentInfo.html">Student Info Main Page</a></li>
         <li class="nav-item"><a class="nav-link" href="viewSched.html">Schedule</a></li>
-        <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        <li class="nav-item"><a class="nav-link active" href="exams.html">Exams</a></li>
         <li class="nav-item"><a class="nav-link" href="grades.html">Grades</a></li>
         <li class="nav-item"><a class="nav-link" href="majorRequirements.html">Requirements</a></li>
       </ul>
@@ -185,7 +193,7 @@
       <div id="collapse5" class="card-collapse collapse">
         <div class="card-body  bg-light text-dark">
       <ul class="nav nav-pills flex-column" role="tablist">
-          <li class="nav-item"><a class="nav-link active" href="Help.html">Help Main Page</a></li>
+          <li class="nav-item"><a class="nav-link" href="Help.html">Help Main Page</a></li>
           <li class="nav-item"><a class="nav-link" href="contactInfo.html">Contact Info</a></li>
       </ul>
     </div>
@@ -194,26 +202,44 @@
   </div>
   </div>
 
-		<div class="col-sm-10">
-      <div>
-			<a href="registration.html" class="tile blue" style="color:white">
-				<h1 class ="title">Help Forums</h1>
-				<p>---------------------------</p>
-				<p>Link to a forum related to course registration where you can see peoples previous questions as well as have your questions aswered.</p>
-			</a>
-		</div>
-		<div >
-			<a href="studentInfo.html" class="tile blue" style="color:white">
-				<h1 class ="title">Contact Info</h1>
-				<p>---------------------------</p>
-				<p>Contact information for helpful individuals who will be able to solve any issues you may face related to the course registration website.</p>
-			</a>
-			</div>
-		</div>
-    </div>
-    </div>
+ <div class="col-md-10">
+<div class="jumbotron">
+  <h2>Exams</h2>
+  <hr>
+ <table>
+  <tr>
+    <th>Course Name  </th>
+    <th>Exam Date</th>
+    <th>Exam Location</th>
+  </tr>
+  <tr>
+    <td>Comp Sci 2150</td>
+    <td>Dec.11th 5:00-8:00pm</td>
+    <td>110 E2 EITC</td>
+  </tr>
+    <tr>
+    <td>Comp Sci 2160</td>
+    <td>Dec.15th 2:00-4:00pm</td>
+    <td>120 Armes</td>
+  </tr>
+  <tr>
+    <td>Comp 1010</td>
+    <td>April 23rd 12:00-3:00pm</td>
+    <td>105 Armes</td>
+  </tr>
+   <tr>
+    <td>Comp 1020</td>
+    <td>April 22nd. 1:00-3:00pm</td>
+    <td>Frank Kennedy Gold Gym</td>
+  </tr>
+</table>
 
-  </div>
+</div>
+ </div>
+
+
+
+</div>
 </div>
 
 <footer class="text-center">
