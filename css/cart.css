@@ -36,7 +36,12 @@ div.container-fluid{
 }
 
 h6{
+  margin-top: 5px;
   text-align: center;
+}
+
+h4{
+  margin-bottom: 20px;
 }
 
 .modal-body{
